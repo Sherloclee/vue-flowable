@@ -1,11 +1,13 @@
 <template>
-  <div>manage</div>
+  <div>{{ test }}</div>
 </template>
 
 <script>
 export default {
     data() {
-        return {}
+        return {
+            test: 'test'
+        }
     }
 }
 </script>
