@@ -1,5 +1,5 @@
 {
-  "name": "vue-flowable",
+  "name": "vueflowable",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "ant-design-vue": "^1.6.4",
+    "bpmn-js": "^7.2.1",
+    "bpmn-js-properties-panel": "^0.35.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "element-ui": "^2.13.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
