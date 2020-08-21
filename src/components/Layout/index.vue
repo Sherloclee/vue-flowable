@@ -1,7 +1,6 @@
 <template>
     <a-layout id="components-layout-demo-custom-trigger" class="main">
         <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
-            <div class="logo" />
             <sideBar/>
         </a-layout-sider>
         <a-layout>
@@ -14,7 +13,7 @@
             </a-layout-header>
             <a-layout-content
                 :style="{ margin: '24px 16px', padding: '24px', background: '#fff', minHeight: '280px' }"
-            ><router-view/></a-layout-content>
+            ><router-view style="height: 100%"/></a-layout-content>
         </a-layout>
     </a-layout>
 </template>

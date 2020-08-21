@@ -4,7 +4,8 @@ export default {
     component: layout,
     name: '工作流',
     children: [
-        { path: '/workflow/bpmn', name:'设计', component: ()=>import('@/components/workflow/bpmn')},
-        { path: '/workflow/manage', name: '管理已有工作流', component: ()=>import('@/components/workflow/manage')}
+        { path: '/workflow/bpmn', name:'design', component: ()=>import('@/components/workflow/bpmn')},
+        { path: '/workflow/formManage', name:'formManage', component: ()=>import('@/components/workflow/formManage')},
+        { path: '/workflow/flowManage', name: 'flowManage', component: ()=>import('@/components/workflow/flowManage')}
     ]
 }

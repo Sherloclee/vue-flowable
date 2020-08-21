@@ -1,33 +1,38 @@
 <template>
     <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
-        <a-sub-menu>
+        <a-menu-item key="0">
+            <router-link :to="{name: 'hhh'}">首页</router-link>
+        </a-menu-item>
+        <a-sub-menu key="1">
             <span slot="title">
-                <a-icon type="mail" />
-                <span>工作流</span>
+                <a-icon type="appstore" />
+                <span>流程管理</span>
             </span>
-            <a-menu-item key="1">
-                <router-link to="/workflow/bpmn">
-                    <a-icon type="user" />
-                    <span>工作流定义</span>
+            <a-menu-item key="9">
+                <router-link :to="{name: 'flowManage'}">
+                    <span>流程定义</span>
                 </router-link>
             </a-menu-item>
-            <a-menu-item key="2">
-                <router-link to="/workflow/manage">
-                    <a-icon type="video-camera" />
-                    <span>管理工作流</span>
+            <a-menu-item key="10">
+                <router-link :to="{name: 'design'}">
+                    <span>流程实例</span>
                 </router-link>
             </a-menu-item>
-            <a-menu-item key="3">
-                <router-link to="/workflow/manage">
-                    <a-icon type="upload" />
-                    <span>nav 3</span>
+            <a-menu-item key="11">
+                <router-link :to="{name: 'formManage'}">
+                    <span>表单管理</span>
                 </router-link>
             </a-menu-item>
         </a-sub-menu>
     </a-menu>
 </template>
 <script>
-export default {};
+export default {
+    components: {},
+    data() {
+        return {};
+    },
+};
 </script>
 
 <style>
