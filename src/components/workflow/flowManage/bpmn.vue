@@ -9,7 +9,6 @@
 <script>
 import BpmnModeler from 'bpmn-js/lib/Modeler'
 import propertiesProviderModule from 'bpmn-js-properties-panel/lib/provider/camunda'
-import request from 'reqwest'
 
 export default {
     data() {
@@ -36,16 +35,6 @@ export default {
         async btnClick(){
             let data = await this.bpmnModeler.saveXML({format: true})
             console.log(data.xml)
-            request({
-                url: 'http://127.0.0.1:5000/createFlow',
-                method: 'post',
-                data:{
-                    xml: data.xml
-                },
-                type: 'json'
-            }).then(res=>{
-                console.log(res)
-            })
         }
     }
 }

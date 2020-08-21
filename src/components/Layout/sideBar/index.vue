@@ -14,7 +14,7 @@
                 </router-link>
             </a-menu-item>
             <a-menu-item key="10">
-                <router-link :to="{name: 'design'}">
+                <router-link :to="{name: 'flowInstance'}">
                     <span>流程实例</span>
                 </router-link>
             </a-menu-item>
