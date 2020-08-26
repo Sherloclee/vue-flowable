@@ -32,7 +32,8 @@
 </template>
 <script>
 //import reqwest from "reqwest";
-import CryptoJs from 'crypto-js';
+// import CryptoJs from 'crypto-js';
+import axios from 'axios'
 
 export default {
     data() {
@@ -51,17 +52,10 @@ export default {
                 name: 'design'
             })
         },
-        search(){
-            let name = `流程${this.tableData.length+1}`
-            let key = CryptoJs.MD5(name).toString()
-            let dat = {
-                name: name,
-                key: key,
-                type: '12',
-                version: 'ver 0.0.1',
-                formKey: 'asdf-lekj-qwer-uioh',
-            }
-            this.tableData.push(dat)
+        async search(){
+            let response = await axios({url:'/api/model/model_list', methods:'GET'})
+            let {data} = response
+            console.log(data)
         }
     },
 };
