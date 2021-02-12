@@ -1,6 +1,8 @@
 function foo(){}
 
 function bar2(){}
-function bar(){}
+function bar(){
+    console.log('bar')
+}
 
 export {foo}
